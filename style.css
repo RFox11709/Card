@@ -1,0 +1,177 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.card {
+    position: relative;
+    background-color: white;
+    border: 3px solid rgb(199, 199, 199);
+    height: 350px;
+    width: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    background-color: rgb(212, 212, 212);
+    height: 350px;
+    width: 650px;
+    clip-path: circle(56.6% at 75% 51%);
+    transform: translateX(500px);
+}
+
+.circle1 {
+    position: absolute;
+    background-color: rgb(161, 161, 161);
+    height: 350px;
+    width: 600px;
+    clip-path: circle(56.6% at 80% 51%);
+    transform: translateX(500px);
+}
+
+.circle2 {
+    position: absolute;
+    background-color: rgb(126, 126, 126);
+    height: 350px;
+    width: 625px;
+    clip-path: circle(56.6% at 80% 51%);
+    transform: translateX(500px);
+}
+
+.circle {
+    animation: load1 2.5s ease-in-out forwards;
+}
+
+.circle1 {
+    animation: load2 3s ease-in-out 0.1s forwards;
+}
+
+.circle2 {
+    animation: load3 3.5s ease-in-out 0.2s forwards;
+}
+
+@keyframes load1 {
+    0% {
+      opacity: 0;
+      transform: translateX(2000px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(-50px);
+    }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes load2 {
+    0% {
+        opacity: 0;
+        transform: translateX(2000px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(-40px);
+    }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes load3 {
+    0% {
+        opacity: 0;
+        transform: translateX(2000px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(-30px);
+    }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+img {
+    position: absolute;
+    height: 60px;
+    border-radius: 100px;
+    margin-top: 115px;
+    margin-left: 50px;
+}
+
+.name {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 180px;
+    margin-left: 35px;
+}
+
+.bio {
+    position: absolute;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 200px;
+    margin-left: 45px;
+}
+
+.info {
+    margin-left: 300px;
+    margin-top: 130px;
+}
+
+.mail,
+.phone,
+.web {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.mail i {
+    transform: scale(1.3);
+}
+
+.mail .gmail {
+    margin-left: 15px;
+    margin-top: -4px;
+}
+
+.phone i {
+    transform: scale(1.3);
+}
+
+.phone .number {
+    margin-left: 15px;
+    margin-top: -3px;
+}
+
+.web i {
+    transform: scale(1.3);
+}
+
+.web .link {
+    margin-left: 15px;
+    margin-top: -4px;
+}
+
+.mail,
+.phone,
+.web {
+    color: white;
+}
+
+p {
+    font-size: medium;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
